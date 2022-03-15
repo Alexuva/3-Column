@@ -1,0 +1,148 @@
+/* RESET GENERAL STYLES */
+
+*
+    margin: 0px
+    padding: 0px
+
+/* FONTS */
+@font-face 
+    font-family: 'LexendDeca-Regular'
+    src: url(fonts/LexendDeca-Regular.ttf)
+
+@font-face 
+    font-family: 'BigShouldersDisplay-Bold' 
+    src: url(fonts/BigShouldersDisplay-Bold.ttf)
+
+
+/* COLORS */
+$Orange: hsl(31, 77%, 52%)
+$Darkcyan: hsl(184, 100%, 22%)
+$Verydarkcyan: hsl(179, 100%, 13%)
+
+/* Main Div */
+
+.container
+    width: 100vw
+    height: 100vh
+    background: hsl(0, 0%, 95%)
+
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+
+    #sedan
+        border-radius: 8px 0px 0px 8px
+    
+    #luxury
+        border-radius: 0px 8px 8px 0px
+
+    .card
+        width: 21.5%
+        height: 62.5%
+
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+
+        
+
+        .icon
+            
+            margin: 13%
+            margin-bottom: 5%
+        
+        .title
+            
+
+            font-family: 'BigShouldersDisplay-Bold'
+            font-size: 1.6em
+            color:  hsl(0, 0%, 95%)
+
+            margin: 13%
+            margin-bottom: 5%
+            margin-top: 5%
+
+        .description
+            
+
+            font-family: 'LexendDeca-Regular'
+            color:  hsla(0, 0%, 100%, 0.75)
+            font-size: 16.1px
+            line-height: 1.6em
+
+            margin: 13%
+            margin-bottom: 15%
+            margin-top: 5%
+        
+        .learn
+            font-family: 'LexendDeca-Regular'
+            font-size: 1em
+            
+            
+            background: hsl(0, 0%, 95%)
+            
+            border: none
+            border-radius: 25px
+
+            width: 50%
+            height: 10%
+
+            margin: 13%
+            margin-bottom: 2.5%
+            margin-top: 10%
+        
+        .learn:hover
+            background: none
+            border: 2px solid  hsla(0, 0%, 100%, 0.75)
+            color:  hsla(0, 0%, 100%, 0.75)
+            cursor: pointer
+    
+    
+    .sedan
+        background: $Orange
+
+        .learn
+            color: $Orange
+
+
+
+    .suv
+        background: $Darkcyan
+
+        .learn
+            color: $Darkcyan
+    
+    .lux
+        background: $Verydarkcyan
+
+        .learn
+            color: $Verydarkcyan
+
+/* MEDIA QUERY */
+@media( max-width: 990px )
+    .container
+        height: 1502px
+        padding-top: 27%
+        padding-bottom: 27%
+        flex-direction: column
+    
+    .container .card 
+        width: 320px
+        height: 30%
+    
+    .container .card .description
+        line-height: 1.5em
+        height: 30%
+        margin-bottom: 0%
+    
+    .container .card .learn
+        margin-top: 10%
+    
+    .container #sedan
+        border-radius: 8px 8px 0px 0px
+    
+    .container #luxury
+        border-radius: 0px 0px 8px 8px
+    

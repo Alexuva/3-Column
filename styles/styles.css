@@ -1,0 +1,132 @@
+/* RESET GENERAL STYLES */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "LexendDeca-Regular";
+  src: url(fonts/LexendDeca-Regular.ttf);
+}
+@font-face {
+  font-family: "BigShouldersDisplay-Bold";
+  src: url(fonts/BigShouldersDisplay-Bold.ttf);
+}
+/* COLORS */
+/* Main Div */
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.container #sedan {
+  border-radius: 8px 0px 0px 8px;
+}
+.container #luxury {
+  border-radius: 0px 8px 8px 0px;
+}
+.container .card {
+  width: 21.5%;
+  height: 62.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container .card .icon {
+  margin: 13%;
+  margin-bottom: 5%;
+}
+.container .card .title {
+  font-family: "BigShouldersDisplay-Bold";
+  font-size: 1.6em;
+  color: #f2f2f2;
+  margin: 13%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.container .card .description {
+  font-family: "LexendDeca-Regular";
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16.1px;
+  line-height: 1.6em;
+  margin: 13%;
+  margin-bottom: 15%;
+  margin-top: 5%;
+}
+.container .card .learn {
+  font-family: "LexendDeca-Regular";
+  font-size: 1em;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 25px;
+  width: 50%;
+  height: 10%;
+  margin: 13%;
+  margin-bottom: 2.5%;
+  margin-top: 10%;
+}
+.container .card .learn:hover {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+.container .sedan {
+  background: #e38826;
+}
+.container .sedan .learn {
+  color: #e38826;
+}
+.container .suv {
+  background: #006970;
+}
+.container .suv .learn {
+  color: #006970;
+}
+.container .lux {
+  background: #004241;
+}
+.container .lux .learn {
+  color: #004241;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 990px) {
+  .container {
+    height: 1502px;
+    padding-top: 27%;
+    padding-bottom: 27%;
+    flex-direction: column;
+  }
+
+  .container .card {
+    width: 320px;
+    height: 30%;
+  }
+
+  .container .card .description {
+    line-height: 1.5em;
+    height: 30%;
+    margin-bottom: 0%;
+  }
+
+  .container .card .learn {
+    margin-top: 10%;
+  }
+
+  .container #sedan {
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .container #luxury {
+    border-radius: 0px 0px 8px 8px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
